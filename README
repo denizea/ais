@@ -41,7 +41,13 @@ sudo apt install -y hackrf libhackrf-dev libhackrf0
 
 # Install gr-osmosdr
 sudo apt install -y gr-osmosdr
+
+# Install rtl-sdr
+sudo apt install -y librtlsdr-dev libpthread-stubs0-dev
+sudo dpkg -i rlt-sdr/rtl-ais_0.4.2-stable_amd64.deb
 ```
 
 Now please follow the steps in gr-aistx folder.
 
+You can run the rtl-sdr with following command:
+sudo rtl_ais -R on -n
