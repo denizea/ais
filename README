@@ -37,6 +37,12 @@ Compile Unpacker
 g++ -o unpacker unpacker.c
 ```
 
+Installing hackrf drivers
+```
+sudo apt install hackrf
+sudo apt install libhackrf-dev
+sudo apt install libhackrf0
+```
 
 Good luck!
 
