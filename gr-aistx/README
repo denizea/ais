@@ -9,11 +9,13 @@ as defined in the protocol specification for AIS.
 
 Install as described in the official out-of-tree documentation, i.e.:
 
-$ mkdir build
-$ cd build
-$ cmake ../
-$ make
-$ sudo make install 
+mkdir build
+cd build
+cmake .. -Wno-dev -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2.7 -DPYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7 -DPYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.so
+cp /usr/include/gnuradio/swig/*.i swig/
+cp /usr/include/gnuradio/swig/gnuradio_swig_bug_workaround.h swig/
+make
+sudo make install 
 
 Copyright 2013-2014 -- Embyte & Pastus
 
