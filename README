@@ -31,5 +31,12 @@ echo 'export PYTHONPATH=/usr/local/lib/python3/dist-packages:usr/local/lib/pytho
 echo 'export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH' >> ~/.profile
 ```
 
+Compile Unpacker
+
+```
+g++ -o unpacker unpacker.c
+```
+
+
 Good luck!
 
